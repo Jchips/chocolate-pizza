@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px red solid;
+  align-items: center;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-img {
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
+}
+
+
+
+.delicious {
+  font-size: 35px;
+  font-family: cursive;
+  
+}
+
+header p {
+
+}
+
+.right-header {
+  display: flex;
+ 
+}
