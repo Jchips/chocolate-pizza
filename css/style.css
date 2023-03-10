@@ -13,8 +13,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 30px double #1C6EA4;
-  /* max-height: 50px; */
+}
+
+.backround-img {
+
+    background-image: url("../img/hr-img.png");
+    background-color: white; 
+    padding: 7px;
 }
 
 header .left-header {
@@ -24,11 +29,6 @@ header .left-header {
 
 .logo-img {
   margin-right: 7px;
-  /* width: 50%;
-  height: 60%;
-  object-fit: cover; */
-  /* max-width: 100%;
-  height: auto; */
 }
 
 
@@ -36,7 +36,6 @@ header .left-header {
 .delicious {
   font-size: 35px;
   font-family: cursive;
-
 }
 
 .best {
@@ -56,6 +55,12 @@ header .left-header {
 .gap-img {
   margin-right: 5px;
 }
+
+.title-section p {
+  color: gray;
+  font-family: sans-serif;
+}
+
 
 .title-section {
   display: flex;
@@ -81,7 +86,7 @@ h1 {
 
 .recipe {
   position: relative;
-  border-bottom: 30px double #1C6EA4;
+ 
 }
 
 .img-text {
@@ -96,14 +101,11 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: absolute;
-  /* text-align: center; */
+  
   top: 20px;
   font-family: cursive;
 }
 
-/* input[type=checkbox] {
-  border-radius: 5px;
-} */
 
 input[type=checkbox]:checked+span {
   text-decoration: line-through;
@@ -145,6 +147,7 @@ button {
 .copyright {
   text-align: center;
   margin: 5px;
+  color: grey;
 }
 
 /* Code from: https://codepen.io/jmaker/pen/rVNQEK */
