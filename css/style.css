@@ -1,19 +1,34 @@
+body {
+  max-width: 800px;
+
+  margin: auto auto;
+}
+
+header,
+.title-section {
+  padding: 20px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-  border: 1px red solid;
   align-items: center;
 }
 
-.left-header {
+.backround-img {
+
+    background-image: url("../img/hr-img.png");
+    background-color: white; 
+    padding: 7px;
+}
+
+header .left-header {
   display: flex;
   flex-direction: row;
 }
 
 .logo-img {
-  width: 50%;
-  height: 60%;
-  object-fit: cover;
+  margin-right: 7px;
 }
 
 
@@ -21,14 +36,149 @@ header {
 .delicious {
   font-size: 35px;
   font-family: cursive;
-  
 }
 
-header p {
-
+.best {
+  font-family: sans-serif;
+  font-size: 10px;
 }
 
 .right-header {
   display: flex;
+
+}
+
+.right-header img {
+  padding: 1px;
+}
+
+.gap-img {
+  margin-right: 5px;
+}
+
+.title-section p {
+  color: gray;
+  font-family: sans-serif;
+}
+
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img,
+.recipe img {
+  width: 100%;
+}
+
+.recipe {
+  position: relative;
  
+}
+
+.img-text {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.img-text ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  
+  top: 20px;
+  font-family: cursive;
+}
+
+
+input[type=checkbox]:checked+span {
+  text-decoration: line-through;
+}
+
+.text p {
+  text-indent: 50px;
+  margin: 20px;
+}
+
+footer {
+  margin: 20px;
+}
+
+.blogger {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: rgb(198, 107, 57);
+  color: white;
+  height: 40px;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.blogger img {
+  margin: 7px;
+}
+
+.blogger h3 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 8px;
+  
+}
+
+.copyright {
+  text-align: center;
+  margin: 5px;
+  color: grey;
+}
+
+/* Code from: https://codepen.io/jmaker/pen/rVNQEK */
+.flourish {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.flourish:before,
+.flourish:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50%;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.flourish:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.flourish:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.flourish img {
+  vertical-align: middle;
 }
